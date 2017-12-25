@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{margin:0;padding: 0;}
+	#box{height: 409px;width: 1000px;position: relative;margin: 50px auto;overflow: hidden;}
+	#left,#right{position: absolute;top:45%;}
+	#left{left:3%;z-index: 999;}
+	#right{right: 3%;}
+	#left:hover,#right:hover{background: #ccc;border:1px solid #999;cursor: pointer;}
+	li{list-style: none;float: left;}
+	#imgBox{height: 409px;width: 6000px;position: absolute;}
+	#liBox{position: absolute;left: 35%;bottom: 5%;}
+	#liBox li{width: 50px;height: 50px;border-radius: 50px;background: #ccc;margin-right: 10px;text-align: center;line-height: 50px;font-size: 30px;cursor: pointer;}
+	.active{background: blue!important;color: #fff;}
+	</style>
+	<script src="轮播图.js"></script>
+</head>
+<body>
+	<div id="box">
+		<div id="left">
+			<img src="img/l.png" alt="">
+		</div>
+
+		<ul id="imgBox">
+			<li><img src="img/1.jpg" alt=""></li>
+			<li><img src="img/2.jpg" alt=""></li>
+			<li><img src="img/3.jpg" alt=""></li>
+			<li><img src="img/4.jpg" alt=""></li>
+			<li><img src="img/5.jpg" alt=""></li>
+			<li><img src="img/6.jpg" alt=""></li>
+		</ul>
+		
+		<ol id="liBox">
+			<li class="active">1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+		</ol>
+
+		<div id="right">
+			<img src="img/r.png" alt="">
+		</div>
+	</div>
+
+</body>
+</html>
